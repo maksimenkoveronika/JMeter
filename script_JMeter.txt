@@ -1,21 +1,21 @@
-	1.Авторизация
+	1.РђРІС‚РѕСЂРёР·Р°С†РёСЏ
 Request URL: http://addressbook/
 Request Method: POST
 Form-Data
 user: admin
 pass: secret
 
-	2.Кликнуть на кнопку [Add new]
+	2.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Add new]
 Request URL: http://addressbook/edit.php
 Request Method: GET
-Кликнуть на кнопку [Next]
+ГЉГ«ГЁГЄГ­ГіГІГј Г­Г  ГЄГ­Г®ГЇГЄГі [Next]
 Request URL: http://addressbook/edit.php
 Request Method: POST
 Form-Data
 quickadd: Next
 address: new
 
-	3.Кликнуть на кнопку [Enter]
+	3.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Enter]
 Request URL: http://addressbook/edit.php
 Request Method: POST
 Form-Data
@@ -48,17 +48,17 @@ phone2:
 notes:
 submit: Enter
 
-	4.Кликнуть на кнопку [Groups]
+	4.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Groups]
 Request URL: http://addressbook/group.php
 Request Method: GET
 
-	5.Кликнуть на кнопку [New group]
+	5.ГЉГ«ГЁГЄГ­ГіГІГј Г­Г  ГЄГ­Г®ГЇГЄГі [New group]
 Request URL: http://addressbook/group.php
 Request Method: POST
 Form-Data
 new: New group
 
-	6.Кликнуть на кнопку [Enter information]
+	6.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Enter information]
 Request URL: http://addressbook/group.php
 Request Method: POST
 Form-Data
@@ -68,11 +68,11 @@ group_header: test
 group_footer: test
 submit: Enter information
 
-	7.Кликнуть на кнопку [home]
+	7.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [home]
 Request URL: http://addressbook/
 Request Method: GET
 
-	8.Добавить контакт в группу
+	8.Р”РѕР±Р°РІРёС‚СЊ РєРѕРЅС‚Р°РєС‚ РІ РіСЂСѓРїРїСѓ
 Request URL: http://addressbook/group.php
 Request Method: POST
 Form-Data
@@ -81,15 +81,15 @@ selected[]: 3
 add: Add to
 to_group: new group
 
-	9.Кликнуть на кнопку [home]
+	9.РљР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [home]
 Request URL: http://addressbook/
 Request Method: GET
-Выбрать контакт и кликнуть на кнопку [Edit]
+Г‚Г»ГЎГ°Г ГІГј ГЄГ®Г­ГІГ ГЄГІ ГЁ ГЄГ«ГЁГЄГ­ГіГІГј Г­Г  ГЄГ­Г®ГЇГЄГі [Edit]
 Request URL: http://addressbook/edit.php?id=7
 Request Method: GET
 
 
-	10.Отредактировать контакт и кликнуть на кнопку [Update]
+	10.РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РєРѕРЅС‚Р°РєС‚ Рё РєР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Update]
 Request URL: http://addressbook/edit.php
 Form Data
 id: 7
@@ -120,30 +120,30 @@ phone2:
 notes:
 update: Update
 
-	11.Переход на список контактов
+	11.РџРµСЂРµС…РѕРґ РЅР° СЃРїРёСЃРѕРє РєРѕРЅС‚Р°РєС‚РѕРІ
 Request URL: http://addressbook/
 Request Method: GET
 
-	12.Выбрать контакт в списке и кликнуть [Delete]
+	12.Р’С‹Р±СЂР°С‚СЊ РєРѕРЅС‚Р°РєС‚ РІ СЃРїРёСЃРєРµ Рё РєР»РёРєРЅСѓС‚СЊ [Delete]
 Request URL: http://addressbook/delete.php?part=7
 Request Method: GET
 
-	13.Переход на список контактов
+	13.РџРµСЂРµС…РѕРґ РЅР° СЃРїРёСЃРѕРє РєРѕРЅС‚Р°РєС‚РѕРІ
 Request URL: http://addressbook/
 Request Method: GET
 
-	14.Перейти в список групп
+	14.РџРµСЂРµР№С‚Рё РІ СЃРїРёСЃРѕРє РіСЂСѓРїРї
 Request URL: http://addressbook/group.php
 Request Method: GET
 
-	15.Выбрать группу и кликнуть на кнопку [Delete groups]
+	15.Р’С‹Р±СЂР°С‚СЊ РіСЂСѓРїРїСѓ Рё РєР»РёРєРЅСѓС‚СЊ РЅР° РєРЅРѕРїРєСѓ [Delete groups]
 Request URL: http://addressbook/group.php
 Request Method: POST
 Form Data
 selected[]: 1
 delete: Delete group(s)
 
-	16.Выйти из системы
+	16.Р’С‹Р№С‚Рё РёР· СЃРёСЃС‚РµРјС‹
 Request URL: http://addressbook/group.php
 Request Method: POST
 Form Data

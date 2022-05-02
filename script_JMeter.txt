@@ -1,0 +1,150 @@
+	1.Авторизация
+Request URL: http://addressbook/
+Request Method: POST
+Form-Data
+user: admin
+pass: secret
+
+	2.Кликнуть на кнопку [Add new]
+Request URL: http://addressbook/edit.php
+Request Method: GET
+Кликнуть на кнопку [Next]
+Request URL: http://addressbook/edit.php
+Request Method: POST
+Form-Data
+quickadd: Next
+address: new
+
+	3.Кликнуть на кнопку [Enter]
+Request URL: http://addressbook/edit.php
+Request Method: POST
+Form-Data
+id:
+firstname: new
+middlename: middle
+lastname: last
+nickname: nick
+photo: (binary)
+title: title
+company:
+address:
+home:
+mobile:
+work:
+fax:
+email: nick@test.com
+email2:
+email3:
+homepage:
+bday:
+bmonth: -
+byear:
+aday:
+amonth: -
+ayear:
+new_group: [none]
+address2:
+phone2:
+notes:
+submit: Enter
+
+	4.Кликнуть на кнопку [Groups]
+Request URL: http://addressbook/group.php
+Request Method: GET
+
+	5.Кликнуть на кнопку [New group]
+Request URL: http://addressbook/group.php
+Request Method: POST
+Form-Data
+new: New group
+
+	6.Кликнуть на кнопку [Enter information]
+Request URL: http://addressbook/group.php
+Request Method: POST
+Form-Data
+group_name: new group
+group_parent_id: 0
+group_header: test
+group_footer: test
+submit: Enter information
+
+	7.Кликнуть на кнопку [home]
+Request URL: http://addressbook/
+Request Method: GET
+
+	8.Добавить контакт в группу
+Request URL: http://addressbook/group.php
+Request Method: POST
+Form-Data
+group:
+selected[]: 3
+add: Add to
+to_group: new group
+
+	9.Кликнуть на кнопку [home]
+Request URL: http://addressbook/
+Request Method: GET
+Выбрать контакт и кликнуть на кнопку [Edit]
+Request URL: http://addressbook/edit.php?id=7
+Request Method: GET
+
+
+	10.Отредактировать контакт и кликнуть на кнопку [Update]
+Request URL: http://addressbook/edit.php
+Form Data
+id: 7
+firstname: qwewe
+middlename: qwewer
+lastname:
+nickname:
+photo: (binary)
+company:
+title:
+address:
+home:
+mobile:
+work:
+fax:
+email:
+email2:
+email3:
+homepage:
+bday: 0
+bmonth: -
+byear:
+aday: 0
+amonth: -
+ayear:
+address2:
+phone2:
+notes:
+update: Update
+
+	11.Переход на список контактов
+Request URL: http://addressbook/
+Request Method: GET
+
+	12.Выбрать контакт в списке и кликнуть [Delete]
+Request URL: http://addressbook/delete.php?part=7
+Request Method: GET
+
+	13.Переход на список контактов
+Request URL: http://addressbook/
+Request Method: GET
+
+	14.Перейти в список групп
+Request URL: http://addressbook/group.php
+Request Method: GET
+
+	15.Выбрать группу и кликнуть на кнопку [Delete groups]
+Request URL: http://addressbook/group.php
+Request Method: POST
+Form Data
+selected[]: 1
+delete: Delete group(s)
+
+	16.Выйти из системы
+Request URL: http://addressbook/group.php
+Request Method: POST
+Form Data
+logout: yes
